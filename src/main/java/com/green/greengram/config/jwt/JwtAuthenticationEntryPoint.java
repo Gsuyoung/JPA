@@ -22,8 +22,8 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
     @Override
     public void commence(HttpServletRequest request
-                       , HttpServletResponse response
-                       , AuthenticationException authException) throws IOException, ServletException {
+            , HttpServletResponse response
+            , AuthenticationException authException) throws IOException, ServletException {
         //GlobalExceptionHandler에서 exception을 잡을 수 있도록 연결하는 작업.
         resolver.resolveException(request, response, null, (Exception)request.getAttribute("exception"));
     }

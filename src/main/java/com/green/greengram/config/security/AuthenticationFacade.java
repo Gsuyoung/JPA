@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 public class AuthenticationFacade {
     public JwtUser getSignedUser() {
         MyUserDetails myUserDetails = (MyUserDetails) SecurityContextHolder.getContext()
-                                                                           .getAuthentication()
-                                                                           .getPrincipal();
+                .getAuthentication()
+                .getPrincipal();
         return myUserDetails.getJwtUser();
     }
 
