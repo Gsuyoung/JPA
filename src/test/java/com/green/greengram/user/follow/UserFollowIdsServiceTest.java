@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 //Spring Test Context (컨테이너) 이용하는거 아니다.
 @ExtendWith(MockitoExtension.class)
-class UserFollowServiceTest {
+class UserFollowIdsServiceTest {
     @InjectMocks
     UserFollowService userFollowService; //Mockito가 객체화를 직접 한다.
 
