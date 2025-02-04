@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 @Getter
 @Entity
-public class UserFollow extends CreatedAt{
+public class UserFollow extends CreatedAt{ //UserFollowIds의 부모
     @EmbeddedId
     private UserFollowIds userFollowIds;
 
