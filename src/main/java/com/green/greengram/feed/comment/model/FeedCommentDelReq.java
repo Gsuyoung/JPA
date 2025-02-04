@@ -14,15 +14,11 @@ import java.beans.ConstructorProperties;
 public class FeedCommentDelReq {
     @Schema(name = "feed_comment_id")
     private long feedCommentId;
-    @JsonIgnore
-    private long userId;
+
 
     @ConstructorProperties({"feed_comment_id"})
     public FeedCommentDelReq(long feedCommentId) {
         this.feedCommentId = feedCommentId;
     }
 
-    public void setUserId(long userId) {
-        this.userId = userId;
-    }
 }
